@@ -68,7 +68,7 @@ if (isset($_GET["invalido"])&& $_GET["invalido"]=='0') { ?>
 			</table>
 		</form>
 
-		<a href="senha.php">Esqueceu sua senha?</a>    <?php #link pra mudar a senha ?>
+		<a href="formulario_senha.php">Esqueceu sua senha?</a>    <?php #link pra mudar a senha ?>
 
 
 
