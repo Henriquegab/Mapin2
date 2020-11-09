@@ -16,7 +16,7 @@ if ($busca==null) {
 if ($busca!=null) {
  	header("Location: formulario_cadastro.php?erro=0");
 	#se a busca dessa matricula com essa senha não existir, é voltado para o menu com a mensagem de erro.
- } 
+ }
 
 	
 
@@ -24,4 +24,8 @@ if ($busca!=null) {
 
 die();
 
+}
+
 ?>
+
+
