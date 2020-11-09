@@ -1,3 +1,5 @@
+A B C D E F 
+
 <?php 
 include("cabecalho.php");
 //testando essa porra
