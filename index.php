@@ -5,7 +5,7 @@ include("cabecalho.php");
 <?php
 # se o login retornar no post (mensagem na url) o valor 0 pra login, significa q deu erro no login e devera carregar essa pagina com o texto de erro.
 if (isset($_GET["login"])&& $_GET["login"]==0) { ?>
-	<p class="alert-danger">Usuario ou seha invalidos</p>
+	<p class="alert-danger">Usuario ou senha invalidos</p>
 	<?php
 }
 
