@@ -1,6 +1,6 @@
 <?php 
 include("cabecalho.php");
-
+//testando essa porra
 ?>
 <?php
 # se o login retornar no post (mensagem na url) o valor 0 pra login, significa q deu erro no login e devera carregar essa pagina com o texto de erro.
