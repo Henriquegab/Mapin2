@@ -4,7 +4,7 @@ include ("cabecalho.php");
 
 <?php
 #se o cadastro deu certo ele retorna pra essa pagina de login com a mensagem de sucesso.
-if(isset($_GET["erro"])&& $_GET["erro"]=='1') { ?> <p class="alert-danger">Usuario já cadastrado!</p>
+if(isset($_GET["erro"])&& $_GET["erro"]=='0') { ?> <p class="alert-danger">Usuario já cadastrado!</p>
 
 <?php
 }
@@ -37,6 +37,15 @@ if(isset($_GET["erro"])&& $_GET["erro"]=='1') { ?> <p class="alert-danger">Usuar
 
 				<tr>
 				<td><button type="submit" class="btn btn-primary">Cadastrar</button></td>
+				</tr>
+				
+			</table>
+		</form>
+
+		<form action="index.php" method="post">
+			<table class="table">
+				<tr>
+				<td><button type="submit" class="btn btn-primary">Voltar</button></td>
 				</tr>
 			</table>
 		</form>

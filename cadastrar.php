@@ -8,7 +8,7 @@ include("cadastro_usuario.php");
 $inseriu = CadastroUsuario($conexao,$_POST["nome"],$_POST["email"], $_POST["CPF"], $_POST["senha"]);
 
 
-if ($inseriu) {
+if ($inseriu==1) {
 
 	header("Location: index.php?cadastro=1");
 	
@@ -16,11 +16,13 @@ if ($inseriu) {
 }
 
 
-else{
-	
-	header("Location: index.php?cadastro=0");
+if ($inseriu==0) {
+	header("Location: formulario_cadastro.php?erro=0");
 	#se deu errado, ele volta pra tela de login
 }
+	
+
+
 
 die();
 

@@ -10,11 +10,11 @@ if ($busca==null) {
 	$busca = BuscaUsuario($conexao, $CPF, $senha);
 	$query = "insert into usuarios (CPF , senha, nome, email) values ('$CPF', '$senhamd5','$nome','$email')"; #essa é a função SQL q será colocada no banco de dados para executar.
 	$inseriu = mysqli_query($conexao, $query);# coloca o resultado da operação no sql nessa variavel pra poder ver depois se foi cadastrado ou não
-	return $inseriu;
+	return 1;
 
 }
 if ($busca!=null) {
- 	header("Location: formulario_cadastro.php?erro=0");
+ 	return 0;
 	#se a busca dessa matricula com essa senha não existir, é voltado para o menu com a mensagem de erro.
  }
 

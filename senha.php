@@ -22,6 +22,14 @@ include("cabecalho.php");
 			</table>
 		</form>
 
+		<form action="index.php" method="post">
+			<table class="table">
+				<tr>
+				<td><button type="submit" class="btn btn-primary">Voltar</button></td>
+				</tr>
+			</table>
+		</form>
+
 
 
 
