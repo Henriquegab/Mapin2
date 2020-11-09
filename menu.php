@@ -1,6 +1,6 @@
 <?php 
 
-include ("cabecalho2.php");
+include ("head.html");
 ?>
 
 <?php
