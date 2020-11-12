@@ -1,5 +1,6 @@
 <?php
 include ("head.html");
+include("logado.php");
 ?>
 
 <?php
@@ -25,11 +26,7 @@ if(isset($_GET["cadastro"])&& $_GET["cadastro"]=='1') { ?> <p class="alert-succe
 
 <?php
 }
-
-
-
 ?>
-
 <?php
 # se a pessoa tentar acessar o menu sem logar, ele retornara pro menu de login com o parametro invalido = 0, mostrando a mensagem q precisa estar logado.
 if (isset($_GET["invalido"])&& $_GET["invalido"]=='0') { ?>
@@ -37,6 +34,10 @@ if (isset($_GET["invalido"])&& $_GET["invalido"]=='0') { ?>
 	<?php
 }
 ?>
+
+
+
+
 
 <?php #formulario de login ?>
 
@@ -55,7 +56,7 @@ if (isset($_GET["invalido"])&& $_GET["invalido"]=='0') { ?>
                         <form action="login.php" method="POST">
                             <div class="field">
                                 <div class="control">
-                                    <input name="CPF" name="number" class="form-control" placeholder="CPF (Somente números)" autofocus="">
+                                    <input name="CPF" type="number" class="form-control" placeholder="CPF (Somente números)" autofocus="">
                                 </div>
                             </div>
 
@@ -70,7 +71,7 @@ if (isset($_GET["invalido"])&& $_GET["invalido"]=='0') { ?>
                             </div>
                             <button type="submit" class="button is-block is-link is-large is-fullwidth">Entrar</button>
                         </form>
-                        <a href="senha.php">Esqueceu sua senha?</a>    
+                        <a href="formulario_senha.php">Esqueceu sua senha?</a>    
                         <?php #link pra mudar a senha ?>
                     </div>
                 </div>

@@ -11,8 +11,27 @@ return $usuario;
 
 }
 
+function BuscaUsuarioCPF($conexao, $CPF){ #Função para buscar duas variaveis no banco de dados. a matricula e a senha na determinada conexao q foi feita.
 
 
+$query = "select * from usuarios where CPF = '{$CPF}'"; #essa é a função SQL q será colocada no banco de dados para executar. and senha = '{$senhamd5}'
+$resultado = mysqli_query($conexao, $query);
+$usuario = mysqli_fetch_assoc($resultado);
+return $usuario;
+
+
+}
+
+function BuscaUsuarioEmail($conexao, $email){ #Função para buscar duas variaveis no banco de dados. a matricula e a senha na determinada conexao q foi feita.
+
+
+$query = "select * from usuarios where email = '{$email}'"; #essa é a função SQL q será colocada no banco de dados para executar. and senha = '{$senhamd5}'
+$resultado = mysqli_query($conexao, $query);
+$usuario = mysqli_fetch_assoc($resultado);
+return $usuario;
+
+
+}
 
 
 
