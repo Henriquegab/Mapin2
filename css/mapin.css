@@ -1,12 +1,8 @@
-body {padding-top: 50px; }
+.body{
+	background-image: url(css\wallpaper.png);
+}
 
-.principal
-{ padding: 40px 15px; 
-
-text-align: center;
-
-
-
-
-
+.h1{
+	color: red;
+	border: 2px black;
 }

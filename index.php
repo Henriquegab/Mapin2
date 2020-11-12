@@ -1,7 +1,7 @@
-<?php 
-include("cabecalho.php");
-
+<?php
+include ("head.html");
 ?>
+
 <?php
 # se o login retornar no post (mensagem na url) o valor 0 pra login, significa q deu erro no login e devera carregar essa pagina com o texto de erro.
 if (isset($_GET["login"])&& $_GET["login"]==0) { ?>
@@ -38,40 +38,43 @@ if (isset($_GET["invalido"])&& $_GET["invalido"]=='0') { ?>
 }
 ?>
 
-
 <?php #formulario de login ?>
 
-	<h2>Login</h2>
-		<form action="login.php" method="post">
-			<table class="table">
-				<tr>
-					<td>CPF (Somente números)</td>
-					<td><input class="form-control" type="number" name="CPF"></td>
-				</tr>
-				<tr>
-					<td>Senha</td>
-					<td><input class="form-control" type="password" name="senha"></td>
-				</tr>
-				<tr>
-				<td><button type="submit" class="btn btn-primary">Login</button></td>
-				</tr>
-			</table>
-		</form>
+<body>
 
 
-<?php #botão do cadastro ?>
-		<form action="formulario_cadastro.php" method="post">
-			<table class="table">
-				<tr>
-				<td><button type="submit" class="btn btn-primary">Cadastrar</button></td>
-				</tr>
-			</table>
-		</form>
-
-		<a href="senha.php">Esqueceu sua senha?</a>    <?php #link pra mudar a senha ?>
+<section class="hero is-success is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="column is-4 is-offset-4">
+                    <h3 class="title has-text-grey">Map-in</h3>
+                    <h3 class="title has-text-grey"></h3>
 
 
+                    <div class="box">
+                        <form action="login.php" method="POST">
+                            <div class="field">
+                                <div class="control">
+                                    <input name="CPF" name="number" class="form-control" placeholder="CPF (Somente números)" autofocus="">
+                                </div>
+                            </div>
 
-<?php
-include ("rodape.php");
-?>
+                            <div class="field">
+                                <div class="control">
+                                    <input name="senha" class="form-control" type="password" placeholder="Sua senha">
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <a href="formulario_cadastro.php">Cadastrar</a>
+                            </div>
+                            <button type="submit" class="button is-block is-link is-large is-fullwidth">Entrar</button>
+                        </form>
+                        <a href="senha.php">Esqueceu sua senha?</a>    
+                        <?php #link pra mudar a senha ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ </body> 

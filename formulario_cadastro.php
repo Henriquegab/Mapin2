@@ -1,5 +1,5 @@
 <?php
-include ("cabecalho.php");
+include ("head.html");
 ?>
 
 <?php
@@ -38,7 +38,7 @@ if(isset($_GET["erro"])&& $_GET["erro"]=='0') { ?> <p class="alert-danger">Usuar
 				<tr>
 				<td><button type="submit" class="btn btn-primary">Cadastrar</button></td>
 				</tr>
-				
+
 			</table>
 		</form>
 
@@ -52,4 +52,4 @@ if(isset($_GET["erro"])&& $_GET["erro"]=='0') { ?> <p class="alert-danger">Usuar
 
 <?php
 include ("rodape.php");
-?>
+?> 

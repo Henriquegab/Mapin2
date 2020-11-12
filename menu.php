@@ -1,6 +1,6 @@
 <?php 
 
-include ("cabecalho2.php");
+include ("head.html");
 ?>
 
 <?php
@@ -32,4 +32,4 @@ if (isset($_COOKIE["usuario_logado"])) {?>
 <?php 
 
 include ("rodape2.php");
-?>
+?> 
