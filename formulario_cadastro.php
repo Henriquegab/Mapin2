@@ -28,7 +28,7 @@ if(isset($_GET["erro"])&& $_GET["erro"]=='0') { ?> <p class="alert-danger">Usuar
 					<td><input class="form-control" type="text" name="email"></td>
 				</tr>
 					<td>CPF (Somente números)</td>
-					<td><input class="form-control" type="number" name="CPF"></td>
+					<td><input class="form-control" type="number" name="CPF" maxlength="11"></td>
 				</tr>
 				<tr>
 					<td>Senha</td>

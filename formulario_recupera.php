@@ -5,10 +5,13 @@ include("senha.php");
 
 
 if (isset($_GET["errado"])&& $_GET["errado"]=='0') { ?>
+	<p class="alert-danger">As senhas não podem ser vazias!</p>
+	<?php
+}
+if (isset($_GET["errado"])&& $_GET["errado"]=='0') { ?>
 	<p class="alert-danger">As senhas não batem!</p>
 	<?php
 }
-
 ?>
 
 

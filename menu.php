@@ -1,17 +1,14 @@
 <?php 
 include("logado.php");
 include ("head.html");
+session_start();
 ?>
 
 <?php
 logado();
 
 ?>
-<?php
-if (isset($_COOKIE["usuario_logado"])) {?>
-	<p class="text-sucess">Você está logado como <?=$_COOKIE["usuario_logado"]?></p> <?php }
-	#isso é pra ver se o cookie que contem o login da pessoa está definida, ou seja, se está logada.
-?>
+
 
 
 <h1>yay</h1>

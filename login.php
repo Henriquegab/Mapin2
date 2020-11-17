@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include("conexao.php");
 include("usuario.php");
 
@@ -10,7 +10,8 @@ if ($usuario == null) {
 	#se a busca dessa matricula com essa senha não existir, é voltado para o menu com a mensagem de erro.
 }
 else{
-	setcookie("usuario_logado", $usuario["CPF"]);
+	#setcookie("usuario_logado", $usuario["CPF"]);
+	$_SESSION["usuario_logado"] = TRUE;
 	header("Location: menu.php");
 	#se deu certo, ele prosegue para o menu.
 }
