@@ -1,6 +1,7 @@
 <?php 
 include("logado.php");
-include ("head.html");
+include("header.php");
+#include ("head.html");
 session_start();
 ?>
 
@@ -22,11 +23,7 @@ logado();
 				?>
 				</tr>
 			</table>
-		
-<a href="senha.php">Solicitar Agendamento</a><br>
-<a href="senha.php">Cadastrar Espaços</a><br>
-<a href="senha.php">Visualizar Espaços</a><br>
-<a href="senha.php">Deferir/Indeferir</a><br>
+
 <?php 
 
 include ("rodape.php");
