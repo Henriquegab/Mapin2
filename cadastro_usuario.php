@@ -1,6 +1,35 @@
 <?php
 include ("conexao.php");
 include ("usuario.php");
+
+function validaCPF($CPF) {
+ 
+    // Extrai somente os números
+    $CPF = preg_replace( '/[^0-9]/is', '', $CPF );
+     
+    // Verifica se foi informado todos os digitos corretamente
+    if (strlen($CPF) != 11) {
+        return false;
+    }
+
+    // Verifica se foi informada uma sequência de digitos repetidos. Ex: 111.111.111-11
+    if (preg_match('/(\d)\1{10}/', $CPF)) {
+        return false;
+    }
+
+    // Faz o calculo para validar o CPF
+    for ($t = 9; $t < 11; $t++) {
+        for ($d = 0, $c = 0; $c < $t; $c++) {
+            $d += $CPF[$c] * (($t + 1) - $c);
+        }
+        $d = ((10 * $d) % 11) % 10;
+        if ($CPF[$c] != $d) {
+            return false;
+        }
+    }
+    return true;
+}
+
 function CadastroUsuario($conexao,$nome,$email, $CPF, $senha){
 
 $busca = BuscaUsuarioCPF($conexao, $CPF);

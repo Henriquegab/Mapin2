@@ -1,7 +1,7 @@
 <?php 
 include("cabecalho.php");
 include("conexao.php");
-include("senha.php");
+#include("senha.php");
 
 
 if (isset($_GET["errado"])&& $_GET["errado"]=='0') { ?>
@@ -27,7 +27,7 @@ if (isset($_GET["errado"])&& $_GET["errado"]=='0') { ?>
 					<td><input class="form-control" type="password" name="novasenha2"></td>
 				</tr>
 				
-				<td><button type="submit" class="btn btn-primary">Conferir</button></td>
+				<td><button type="submit" class="btn btn-primary">Confirmar</button></td>
 				</tr>
 			</table>
 		</form>

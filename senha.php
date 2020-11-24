@@ -15,7 +15,7 @@ if ($confere) {
 		echo "verdadeiro";
 	}
 	
-	#header("Location: formulario_senha.php?erro=0");
+	header("Location: formulario_senha.php?erro=0");
 	
 	#se deu certo, ele prosegue para o menu.
 }
@@ -26,7 +26,7 @@ else {
 		echo "falso";
 	}
 	
-	#header("Location: formulario_recupera.php");
+	header("Location: formulario_recupera.php");
 	#se deu errado, ele volta pra tela de login
 
 }

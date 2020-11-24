@@ -3,9 +3,10 @@ include("conexao.php");
 include("cadastro_usuario.php");
 
 
+$confereCPF = validaCPF($_POST["CPF"]);
 
-
-$inseriu = CadastroUsuario($conexao,$_POST["nome"],$_POST["email"], $_POST["CPF"], $_POST["senha"]);
+if ($confereCPF==TRUE) {
+	$inseriu = CadastroUsuario($conexao,$_POST["nome"],$_POST["email"], $_POST["CPF"], $_POST["senha"]);
 
 
 if ($inseriu==1) {
@@ -26,5 +27,15 @@ if ($inseriu==0) {
 
 die();
 
+}
 
+if ($confereCPF==FALSE) {
+	
+
+		header("Location: formulario_cadastro.php?erro=1");
+
+
+}
+
+die();
 ?>

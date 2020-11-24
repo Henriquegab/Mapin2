@@ -1,5 +1,6 @@
 .body{
-	background-image: url(css\wallpaper.png);
+	background-image: url("../wallpaper.png");
+	background-color: white;
 }
 
 .h1{

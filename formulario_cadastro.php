@@ -9,10 +9,13 @@ if(isset($_GET["erro"])&& $_GET["erro"]=='0') { ?> <p class="alert-danger">Usuar
 <?php
 }
 
-
-
 ?>
+<?php
+if(isset($_GET["erro"])&& $_GET["erro"]=='1') { ?> <p class="alert-danger">Digite um CPF Válido!!</p>
 
+<?php
+}
+?>
 
 
 <h2>Cadastro</h2>

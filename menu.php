@@ -11,7 +11,7 @@ logado();
 
 
 
-<h1>yay</h1>
+
 
 
 		<form action="index.php" method="post">
@@ -22,8 +22,11 @@ logado();
 				?>
 				</tr>
 			</table>
-		</form>
-<a href="senha.php">Esqueceu sua senha?</a>    
+		
+<a href="senha.php">Solicitar Agendamento</a><br>
+<a href="senha.php">Cadastrar Espaços</a><br>
+<a href="senha.php">Visualizar Espaços</a><br>
+<a href="senha.php">Deferir/Indeferir</a><br>
 <?php 
 
 include ("rodape.php");

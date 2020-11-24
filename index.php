@@ -1,4 +1,14 @@
 <?php
+
+
+
+
+
+
+
+
+?>
+<?php
 include ("head.html");
 include("logado.php");
 ?>
@@ -27,6 +37,7 @@ if(isset($_GET["cadastro"])&& $_GET["cadastro"]=='1') { ?> <p class="alert-succe
 <?php
 }
 ?>
+
 <?php
 # se a pessoa tentar acessar o menu sem logar, ele retornara pro menu de login com o parametro invalido = 0, mostrando a mensagem q precisa estar logado.
 if (isset($_GET["invalido"])&& $_GET["invalido"]=='0') { ?>
@@ -36,15 +47,12 @@ if (isset($_GET["invalido"])&& $_GET["invalido"]=='0') { ?>
 ?>
 
 
-
-
-
 <?php #formulario de login ?>
 
-<body>
 
 
-<section class="hero is-success is-fullheight">
+
+<section class="hero is-success is-fullheight" >
         <div class="hero-body">
             <div class="container has-text-centered">
                 <div class="column is-4 is-offset-4">
@@ -56,7 +64,7 @@ if (isset($_GET["invalido"])&& $_GET["invalido"]=='0') { ?>
                         <form action="login.php" method="POST">
                             <div class="field">
                                 <div class="control">
-                                    <input name="CPF" type="number" class="form-control" placeholder="CPF (Somente números)" autofocus="">
+                                    <input name="CPF" maxlength="11" type="number" class="form-control" placeholder="CPF (Somente números)" autofocus="" >
                                 </div>
                             </div>
 
