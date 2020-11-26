@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '651e4467aa10e4fa0dd9047a2fae5af8dbaecce9',
+    'reference' => '9a401e2537f6a0450f17745498ccc9abb19587a0',
     'name' => '__root__',
   ),
   'versions' => 
@@ -31,7 +31,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '651e4467aa10e4fa0dd9047a2fae5af8dbaecce9',
+      'reference' => '9a401e2537f6a0450f17745498ccc9abb19587a0',
     ),
     'fig/http-message-util' => 
     array (
@@ -185,6 +185,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '42dae2cbd13154083ca6d70099692fef8ca84bfb',
+    ),
+    'phpmailer/phpmailer' => 
+    array (
+      'pretty_version' => 'v6.2.0',
+      'version' => '6.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e38888a75c070304ca5514197d4847a59a5c853f',
     ),
     'psr/cache' => 
     array (

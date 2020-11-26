@@ -22,6 +22,12 @@ if ($inseriu==0) {
 	#se deu errado, ele volta pra tela de login
 }
 	
+if ($inseriu==2) {
+
+	header("Location: formulario_cadastro.php?erro=2");
+	
+	#email invalido
+}
 
 
 

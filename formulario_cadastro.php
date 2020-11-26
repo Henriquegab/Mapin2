@@ -16,6 +16,12 @@ if(isset($_GET["erro"])&& $_GET["erro"]=='1') { ?> <p class="alert-danger">Digit
 <?php
 }
 ?>
+<?php
+if(isset($_GET["erro"])&& $_GET["erro"]=='2') { ?> <p class="alert-danger">Digite um email Válido!!</p>
+
+<?php
+}
+?>
 
 
 <h2>Cadastro</h2>
@@ -28,7 +34,7 @@ if(isset($_GET["erro"])&& $_GET["erro"]=='1') { ?> <p class="alert-danger">Digit
 				</tr>
 				<tr>
 					<td>Email</td>
-					<td><input class="form-control" type="text" name="email"></td>
+					<td><input class="form-control" type="email" name="email"></td>
 				</tr>
 					<td>CPF (Somente números)</td>
 					<td><input class="form-control" type="number" name="CPF" maxlength="11"></td>

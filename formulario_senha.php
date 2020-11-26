@@ -10,6 +10,13 @@ if (isset($_GET["erro"])&& $_GET["erro"]=='0') { ?>
 }
 
 ?>
+<?php
+if (isset($_GET["errocpf"])&& $_GET["errocpf"]=='0') { ?>
+	<p class="alert-danger">Digite um CPF Válido!</p>
+	<?php
+}
+
+?>
 
 <?php #formulario de login ?>
 
@@ -19,11 +26,7 @@ if (isset($_GET["erro"])&& $_GET["erro"]=='0') { ?>
 				
 				<tr>
 					<td>Digite seu CPF (Somente números)</td>
-					<td><input class="form-control" type="number" name="CPF"></td>
-				</tr>
-				<tr>
-					<td>Digite seu Email</td>
-					<td><input class="form-control" type="text" name="email"></td>
+					<td><input class="form-control" placeholder="CPF (Somente números)" type="number" name="CPF"></td>
 				</tr>
 				<tr>
 				<td><button type="submit" class="btn btn-primary">Conferir</button></td>

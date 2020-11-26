@@ -37,6 +37,9 @@ if ($busca==null) {
 
 	$busca = BuscaUsuarioEmail($conexao, $email);
 	if ($busca==null) {
+
+        if(!filter_var($email, FILTER_VALIDATE_EMAIL))
+            {return 2;}
 		$senhamd5 = md5($senha); # A senha recebida nessa função é encriptografada em md5 e se o resultado bater com o do banco de dados, ela será aceita.
 	
 	$query = "insert into usuarios (CPF , senha, nome, email) values ('$CPF', '$senhamd5','$nome','$email')"; #essa é a função SQL q será colocada no banco de dados para executar.
