@@ -1,7 +1,7 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-
+include("head.html");
 
  require_once 'vendor/autoload.php'; //chama a classe de onde você a colocou.
 function EnviarEmail($email, $senha){
@@ -30,8 +30,8 @@ $mail->FromName = "Map-in"; #Nome do remetente.
 
 $mail->addAddress("$email"); // email do destinatario.
 
-$mail->Subject = "Alteração de Senha"; #Aqui vai o assunto do email, pode vim atraves de variavel.
-$mail->Body = "Sua nova senha é :'$senha'";#Aqui vai a mensagem, que tambem pode vim por variavel.
+$mail->Subject = "Senha Alterada"; #Aqui vai o assunto do email, pode vim atraves de variavel.
+$mail->Body = "Sua nova senha é :$senha";#Aqui vai a mensagem, que tambem pode vim por variavel.
 
   if(!$mail->send()) {
         #echo "Mailer Error: " . $mail->ErrorInfo;
