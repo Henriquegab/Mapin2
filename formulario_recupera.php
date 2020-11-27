@@ -15,9 +15,13 @@ if (isset($_GET["errado"])&& $_GET["errado"]=='0') { ?>
 ?>
 
 
-<h2>Recuperação de senha</h2>
+<h2>Alteração de senha</h2>
 		<form action="nova_senha.php" method="post">
 			<table class="table">
+				<tr>
+					<td>Digite seu CPF (Somente números)</td>
+					<td><input class="form-control" placeholder="CPF (Somente números)" type="number" name="CPF"></td>
+				</tr>
 				<tr>
 					<td>Nova Senha</td>
 					<td><input class="form-control" type="password" name="novasenha"></td>
@@ -32,7 +36,7 @@ if (isset($_GET["errado"])&& $_GET["errado"]=='0') { ?>
 			</table>
 		</form>
 
-		<form action="index.php" method="post">
+		<form action="menu.php" method="post">
 			<table class="table">
 				<tr>
 				<td><button type="submit" class="btn btn-primary">Voltar</button></td>

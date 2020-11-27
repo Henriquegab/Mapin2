@@ -38,11 +38,17 @@ $build = listbuild($conect);
 			<tr>
 				<td>PREDIO</td>
 				<td>
-					<?php
-						foreach($build as $predios) : 
-					?>
-					<input type="radio" name="predio" value = "<?=$predios['id']?>"> <?=$predios['nome_predio']?> <br/>
-				<?php endforeach?>
+
+					<select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="predio">
+
+					<?php foreach($build as $predios) : ?>
+					<option value = "<?=$predios['id']?>"><?=$predios['nome_predio']?>
+					</option>
+					<?php endforeach?>
+					</select>
+				
+
+
 				</td>
 			</tr>			
 			<tr>
@@ -57,8 +63,7 @@ $build = listbuild($conect);
 				<td>ANDAR</td>
 				<td></select><input class="form-control form-control-lg" type="number" name="andar"></td>
 			</tr>	
-					
-				
+						
 			<tr>
 				<td><button class="btn btn-lg btn-primary" type="submit">  CADASTRAR  </button></td>	
 			</tr>

@@ -2,6 +2,12 @@
 include("conexao.php");
 include("cadastro_usuario.php");
 
+if ($_POST["senha"]==$_POST["senha2"]) {
+	
+	
+
+
+
 
 $confereCPF = validaCPF($_POST["CPF"]);
 
@@ -42,6 +48,9 @@ if ($confereCPF==FALSE) {
 
 
 }
+}
+
+else{header("Location: formulario_cadastro.php?erro=3");}
 
 die();
 ?>

@@ -5,6 +5,11 @@
 	<title>MAPIN</title>
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="cadastro.css" rel="stylesheet">
+<?php require_once("logado.php");
+
+
+?>
+
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -25,6 +30,7 @@
     		<div class="navbar-nav">
     			<a class="nav-item nav-link" href="formbuild.php">CADASTRAR PRÉDIO <span class="sr-only">(current)</span></a>
     		</div>
+            
   		</div>
 	</nav>
 	<div class="container">

@@ -22,6 +22,12 @@ if(isset($_GET["erro"])&& $_GET["erro"]=='2') { ?> <p class="alert-danger">Digit
 <?php
 }
 ?>
+<?php
+if(isset($_GET["erro"])&& $_GET["erro"]=='3') { ?> <p class="alert-danger">As senhas devem ser iguais!</p>
+
+<?php
+}
+?>
 
 
 <h2>Cadastro</h2>
@@ -42,6 +48,10 @@ if(isset($_GET["erro"])&& $_GET["erro"]=='2') { ?> <p class="alert-danger">Digit
 				<tr>
 					<td>Senha</td>
 					<td><input class="form-control" type="password" name="senha"></td>
+				</tr>
+				<tr>
+					<td>Confirmar Senha</td>
+					<td><input class="form-control" type="password" name="senha2"></td>
 				</tr>
 
 				<tr>

@@ -2,6 +2,10 @@
 <?php include("conection.php");?>
 <?php include("functionlist.php");?>
 <?php 
+require_once("logado.php");
+session_start();
+$token = md5(session_id());
+logado();
 		
 	
 		$nome = $_POST["nome"];

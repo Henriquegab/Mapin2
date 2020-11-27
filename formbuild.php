@@ -1,4 +1,8 @@
-<?php include("header.php");?>
+<?php include("header.php");
+require_once("logado.php");
+session_start();
+$token = md5(session_id());
+logado();?>
 <h1 align="center">CADASTRO DE PRÉDIO</h1>
 	<form action="resultbuild.php" method="post">
 		<table class="table table-borderless">

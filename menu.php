@@ -1,28 +1,19 @@
 <?php 
-include("logado.php");
-include("header.php");
+require_once("logado.php");
+require_once("header.php");
 #include ("head.html");
-session_start();
 ?>
-
 <?php
+session_start();
+$token = md5(session_id());
 logado();
+?>
+<?php
+
+		echo '<a href="Logout.php?token='.md5(session_id()).'">Sair</a>';
 
 ?>
-
-
-
-
-
-
-		<form action="index.php" method="post">
-			<table class="table">
-				<tr>
-				<td><button type="submit" class="btn btn-primary">tela de inicio</button></td><?php
-				#botão, tela de inicio 
-				?>
-				</tr>
-			</table>
+	
 
 <?php 
 
