@@ -12,17 +12,17 @@
 
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class=" navbar navbar-expand-lg navbar-light bg-light ">
   		<a class="navbar-brand" href="menu.php">MAPIN</a>
   		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     		<div class="navbar-nav">
-    			<a class="nav-item nav-link" href="formspace.php">CADASTRAR SALA <span class="sr-only">(current)</span></a>
+    			<a class="nav-item nav-link" href="formspace.php">CADASTRAR ESPAÇO <span class="sr-only">(current)</span></a>
     		</div>
     		<div class="navbar-nav">
     			<a class="nav-item nav-link" href="#"><span class="sr-only">(current)</span></a>
     		</div>
     		<div class="navbar-nav">
-    			<a class="nav-item nav-link" href="spacelist.php">SALAS<span class="sr-only">(current)</span></a>
+    			<a class="nav-item nav-link" href="spacelist.php">ESPAÇOS<span class="sr-only">(current)</span></a>
     		</div>
     		<div class="navbar-nav">
     			<a class="nav-item nav-link" href="#"><span class="sr-only">(current)</span></a>
@@ -35,3 +35,4 @@
 	</nav>
 	<div class="container">
 	<div class="principal">
+

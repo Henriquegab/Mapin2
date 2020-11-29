@@ -29,11 +29,7 @@ if (isset($_GET["errocpf"])&& $_GET["errocpf"]=='0') { ?>
 					<td><input class="form-control" placeholder="CPF (Somente números)" type="number" name="CPF"></td>
 				</tr>
 				
-				<tr>
-
-					<td>Digite seu CPF (Somente números)</td>
-					<td><input class="form-control" placeholder="CPF (Somente números)" type="number" name="CPF"></td>
-				</tr>
+			
 				<tr>
 				<td><button type="submit" class="btn btn-primary">Conferir</button></td>
 				</tr>
